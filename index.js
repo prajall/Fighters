@@ -59,6 +59,7 @@ let p2 = new Player("Paquito");
 let isOver = false;
 updateGame(p1, p2);
 
+
 if (!isOver) {
   // ======================== ATTACKING ==========================-
   // ---------- Q button - PLAYER 1 ATTACKING -----------
@@ -77,6 +78,7 @@ if (!isOver) {
     if (e.key == "p") p2.strike(p1);
   });
 
+  
   // ========================= HEALING ============================
 
   // ----- A-button PLAYER 1 HEALING--------------
@@ -87,6 +89,7 @@ if (!isOver) {
     if (e.key == "a") p1.heal();
   });
 
+  
   // ----- L-button PLAYER 2 HEALING--------------
   document.getElementById("heal1").onclick = () => {
     p2.heal();
@@ -96,6 +99,7 @@ if (!isOver) {
   });
 }
 // =================================== RESET ====================================
+
 
 const resetButton = document.getElementById("reset");
 
